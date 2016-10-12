@@ -1,0 +1,58 @@
+\documentclass[]{article}
+\usepackage{graphicx} % graphic import stuff
+\usepackage[parfill]{parskip} % to start each parapraph will an empty line before
+
+%
+% settings
+%
+\DeclareGraphicsExtensions{.pdf,.png,.jpg} % omits endings of graphics
+\graphicspath{{../img/}} % the path to the graphics
+%
+% command for √ and x
+%
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+%
+% centers, scales and wraps a given graphic into a figure env
+% % [1]: the scale factor 
+% % [2]: the name of the image which will also be used with 'fig:' prefix as label
+%% [3] the caption of the figure
+%
+\newcommand{\cgraphic}[4]
+{
+	\begin{figure}[htb]
+		\begin{center}
+		\includegraphics[scale=#1]{#2}
+		\end{center}
+		\caption{#3}
+		\label{fig:#2}
+	\end{figure}
+}%
+
+%opening
+\title{Group 5 - \textbf{No Name}}
+\author{Manuel Vogel (C), Felix Mohr,  Jinghua Lin,  Altan Karkul, Wassilij Mikheyev}
+
+\begin{document}
+	
+	\maketitle	
+
+	\section{Architecture}
+	\cgraphic{.08}{architecture_proposal}{Architecture Proposal}
+	We accept the given proposal of the architecture of Figure \ref{fig:architecture_proposal} given by the lecturer except the module for \textit{Elastic Search}. We consider this module as optional. In our opinion the rest of the proposal is a very well-thought one. The cut of the layers makes sense and the fact that only some modules in the logical layer will scale and not the databases is very good. We don't want to handle data replication in the data layer. 
+	
+	As a team we made the decision for the following frameworks:
+	\begin{description}
+		\item[UI Layer:] Angular2
+		\item[Logical Layer:] Spring Cloud
+		\item[Data Layer:] H2 in-memory
+		\item[Packaging:] Docker
+		\item[Platform:] 1\&1 Cloud Service if the collaboration will be possible. Otherwise we run it locally on our notebooks.
+	\end{description}
+
+	\section{Use Cases}
+	\cgraphic{.08}{use_cases_proposal}{Use Case Proposal}
+	The Use Cases proposed in Figure \ref{fig:use_cases_proposal} are completely fine for us. At the moment we cannot estimate the amount of work for each use case, because first we have to become familiar with the chosen frameworks mentioned above. We can also imagine that during the development process there will rise other features we will propose for the implementation.
+	
+\end{document}

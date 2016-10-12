@@ -1,0 +1,31 @@
+----------------------------------------------------
+:. HSKA USER INTERFACES & DISTRIBUTED SYSTEMS LAB .:
+----------------------------------------------------
+          \ :. HSKA CLOUD & SAAS APPS .: /
+           ------------------------------
+		   
+WEEK 1: 06.October 2016
+-------------------------
+Task-1:
+- Evaluate the presented Use-Cases (see slides and use cases proposal image)
+- Evaluate the proposed architecture (see architecture proposal image)
+- Do research on Cloud & SAAS (see slides: OpenStack, SpringCloud, 1&1 Cloud, AWS, Azure, ...)
+
+Due date: 13.October 2016
+
+Description:
+Each team will prepare and make a short presentation
+and will provide/upload the presentation 
+and a paper (max 2 pages) to Ilias.
+
+Task-2:
+Send an E-Mail to the tutor (aladdin.oezenir@abas.de)
+Team name, Team members + matrikelnummer and the team captain 
+Also prioritize your preferred work area: UI and BACKEND+DB
+
+
+Resources:
+https://cloudpanel-api.1and1.com/documentation/
+https://hosting.1und1.de/cloud-community/develop/11-docker-machine-driver/ (Section "Develop")
+http://www.openstack.org/
+http://projects.spring.io/spring-cloud/
