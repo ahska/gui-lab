@@ -1,0 +1,75 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+%%%%%%%%%%%
+% beamer fixes
+%%%%%%%%%%%
+\usepackage{lmodern}% for font warnings
+\usepackage{newtxtext,newtxmath} % for warning: Font shape `OMS/lmss/m/n' undefined
+\let\Tiny=\tiny
+
+%
+% command for √ and x
+%
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+%
+% centers and scales a given graphic
+% % [1]: the scale factor 
+% % [2]: the name of the image
+%
+\newcommand{\cgraphic}[2]
+{
+	\begin{center}
+		\includegraphics[scale=#1]{#2}
+	\end{center}
+}%
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+
+% graphics
+\DeclareGraphicsExtensions{.pdf,.png,.jpg} % omits endings of graphics
+\graphicspath{{../img/}} % the path to the graphics
+
+%% title stuff
+\title{Group 5 - \textbf{No Name}}
+\author[]{Manuel Vogel (C), Felix Mohr,  Jinghua Lin,  Altan Karkul, Wassilij Mikheyev}
+\institute{Graphical User Interfaces Lab}
+\date{\today}
+
+%%%%%
+\begin{document}
+\frame{\titlepage}
+%\frame{\tableofcontents}
+
+% 1
+\section{Architecture}
+\subsection{Proposal}
+\begin{frame}{Proposed Architecture}
+		\cgraphic{.06}{architecture_proposal}
+		\begin{itemize}
+			\item Elastic Search should be optional
+		\end{itemize}
+\end{frame}
+\subsection{Technologies}
+\begin{frame}{Chosen Technologies}
+	\begin{itemize}[<+->]
+		\item \textbf{UI Layer:} Angular2 \includegraphics[scale=.07]{angular2_logo}
+		\item \textbf{Logical Layer:} Spring Cloud \includegraphics[scale=.09]{spring_cloud_logo}
+		\item \textbf{Data Layer:} H2 in-memory \includegraphics[scale=.07]{h2_logo}
+		\item \textbf{Packaging:} Docker \includegraphics[scale=.09]{docker_logo}
+		\item \textbf{Platform:} 1\&1 Cloud Service if the collaboration will be possible \includegraphics[scale=.07]{11_logo}
+		\item \textbf{Platform (alt.):} Otherwise we run it locally on our notebooks.
+	\end{itemize}
+\end{frame}
+% 2
+\section{Use Cases}
+\begin{frame}
+	\cgraphic{.06}{architecture_proposal}
+		\begin{itemize}[<+->]
+			\item We accept the proposed Use Cases completely
+			\item If there are issues/features rising up during development and/or usage of the prototype, then can be proposed for implementation
+		\end{itemize}
+\end{frame}
+\end{document}
